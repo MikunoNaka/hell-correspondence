@@ -21,6 +21,7 @@ func main() {
 	router.Use(gin.Logger())
 	router.LoadHTMLGlob("templates/*")
 	router.Static("/static", "static")
+	router.Static("/media", "media")
 
 	router.GET("/en", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "en.index.html", nil)

@@ -1,3 +1,55 @@
 body {
-	background-color: #101010;
+	background-color: #232627;
+}
+
+.navbar {
+	background-color: #222526;
+	overflow: hidden;
+}
+
+.navbar a {
+	float: right;
+	display: block;
+	color: #9e00ff;
+	text-align: right;
+/*	padding: 30px 50px;*/
+	padding: 30px 8%;
+	text-decoration: none;
+	font-size: 24;
+}
+
+.navbar #logo {
+	float: left;
+	padding: 0px 0px;
+}
+
+.navbar .hamburger-icon {
+	display: none;
+}
+
+/*hamburger menu shit*/
+@media screen and (max-width: 481px) {
+	.navbar a:not(:first-child) {display: none;}
+	.navbar a.hamburger-icon {
+		float: right;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	.navbar.responsive {position: relative;}
+	.navbar.responsive a.hamburger-icon {
+/*		display: none;*/
+		position: relative;
+		right: 0;
+		top: 0;
+		padding: 30px 8%;
+		float:right;
+	}
+	.navbar.responsive a {
+		float: right;
+		display: block;
+		text-align: center;
+		padding: 30px 8%;
+	}
 }

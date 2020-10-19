@@ -2,9 +2,33 @@
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="static/css/new.main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script>
+		function myFunction() {
+			var x = document.getElementById("topnavbar");
+			if (x.className === "navbar") {
+				x.className += " responsive";
+			} else {
+				x.className = "navbar";
+			}
+		} 
+		</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title>Hell Correspondence</title>
 	</head>
 	<body>
-		hh
+		<div class="navbar" id="topnavbar">
+			<a href="/" class="logo" id="logo">
+				<img src="media/index.png" alt="Hell Girl anime version" width="80" height="80"></a>
+			<a href="javascript:void(0);" class="hamburger-icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i></a>
+			<a href="/en">More</a>
+		</div>
+
+
+		<div id="">
+		</div>
+		<div id="foot">
+		</div>
 	</body>
 </html>
