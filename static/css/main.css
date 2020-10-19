@@ -1,0 +1,32 @@
+body {
+	background-color: #000000;
+}
+
+#jp-body {
+	position: absolute;
+	left: 50%; top: 50%;
+	transform: translate(-50%, -95%); 
+	border: 5px solid #000000;
+	padding: 10px;
+}
+
+
+#jp-body * {
+	text-align: center;
+	color: #ffffff;
+}
+
+#jp-body #name {
+	width: 65%;
+	color: #ff0000;
+}
+
+#jp-body #send {
+	background-color: #C0C8CA;
+	color: #000000;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, 58%);
+}
+
