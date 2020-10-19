@@ -2,6 +2,10 @@ body {
 	background-color: #232627;
 }
 
+strong {
+	color: red;
+}
+
 .navbar {
 	background-color: #222526;
 	overflow: hidden;
@@ -55,3 +59,17 @@ body {
 }
 
 /*Navbar is done*/
+.body {
+	background-image: url("HG.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	text-align: center;
+}
+
+.body h1, p {
+	color: #f0f0f0;
+	background-color: #23262766;
+	display: inline;
+	float: right;
+	margin-right: 3%;
+}
