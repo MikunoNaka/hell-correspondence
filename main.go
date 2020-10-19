@@ -34,5 +34,13 @@ func main() {
 		c.HTML(http.StatusOK, "redirect.index.html", nil)
 	})
 
+	router.GET("/new", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "new.index.html", nil)
+	})
+
+	router.GET("/site-down", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "maintain.html", nil)
+	})
+
 	router.Run(":" + port)
 }
