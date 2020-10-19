@@ -70,6 +70,15 @@ strong {
 	color: #f0f0f0;
 	background-color: #23262766;
 	display: inline;
-	float: right;
+}
+
+
+.rightflex {
+	float: right; 
 	margin-right: 3%;
+}
+
+#form {
+	margin-top: 4%;
+	: ;
 }
