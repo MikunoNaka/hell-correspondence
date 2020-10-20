@@ -62,23 +62,50 @@ strong {
 .body {
 	background-image: url("HG.png");
 	background-repeat: no-repeat;
-	background-position: left center;
+	background-position: left top;
 	text-align: center;
+	margin-left: 4%;
 }
 
-.body h1, p {
+.body h1, h3 {
 	color: #f0f0f0;
 	background-color: #23262766;
 	display: inline;
+	padding: 1px 1px;
 }
-
 
 .rightflex {
 	float: right; 
-	margin-right: 3%;
+	margin-right: 10%;
 }
 
-#form {
-	margin-top: 4%;
-	: ;
+.form {
+	padding: 9%;
+}
+
+#send {
+	margin-left: 6%;
+	color: #000000;
+	background-color: #ff0057;
+	border: 1px solid #e30808;
+	border-radius: 8px;
+	padding: 1% 5%;
+	transition-duration: 0.4s;
+}
+
+#send:hover {
+	background-color: #ff0000;
+}
+
+#name {
+	color: #ff0000;
+}
+
+.big {
+	font-size: 20px;
+	padding: 4px 4px;
+}
+
+.subtext {
+	margin-top: 3%;
 }
