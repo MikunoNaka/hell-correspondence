@@ -4,7 +4,7 @@ import (
 //	"log"
 	"net/http"
 	"os"
-
+	"fmt"
 	"github.com/gin-gonic/gin"
 	_ "github.com/heroku/x/hmetrics/onload"
 )
@@ -37,11 +37,11 @@ func main() {
 
 	router.GET("/new", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "new.index.html", nil)
+		name := c.PostFormArray("name")
 	})
 
 	router.GET("/site-down", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "maintain.html", nil)
 	})
-
 	router.Run(":" + port)
 }
